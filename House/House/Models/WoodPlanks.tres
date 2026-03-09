@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://fjg3yjn1rjot"]
+
+[ext_resource type="Texture2D" uid="uid://4u4h1mloge0o" path="res://House/House/textures/WoodPlanks.jpg" id="1_c1j4a"]
+
+[resource]
+resource_name = "WoodPlanks"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_c1j4a")
+emission_enabled = true

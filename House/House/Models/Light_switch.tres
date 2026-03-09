@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dpjpsdrw5e4hj"]
+
+[ext_resource type="Texture2D" uid="uid://du3wrjw2nrpea" path="res://House/House/textures/Light_switch.png" id="1_4bciq"]
+
+[resource]
+resource_name = "Light_switch"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_4bciq")
+emission_enabled = true

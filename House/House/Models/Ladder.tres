@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://sj52waejywcg"]
+
+[ext_resource type="Texture2D" uid="uid://l785bg4q25q7" path="res://House/House/textures/Ladder.png" id="1_u352e"]
+
+[resource]
+resource_name = "Ladder"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_u352e")
+emission_enabled = true

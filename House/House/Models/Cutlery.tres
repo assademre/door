@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cjg18wlaghe0"]
+
+[ext_resource type="Texture2D" uid="uid://cqqfh8exy76bp" path="res://House/House/textures/Cutlery.png" id="1_mplj2"]
+
+[resource]
+resource_name = "Cutlery"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_mplj2")
+emission_enabled = true

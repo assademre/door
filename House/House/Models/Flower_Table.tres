@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bqcx5nal1ke2h"]
+
+[ext_resource type="Texture2D" uid="uid://tn4musgmc5ok" path="res://House/House/textures/Flower_Table.png" id="1_8p17t"]
+
+[resource]
+resource_name = "Flower_Table"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_8p17t")
+emission_enabled = true

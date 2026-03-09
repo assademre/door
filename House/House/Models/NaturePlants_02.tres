@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://du227vr3rsjys"]
+
+[ext_resource type="Texture2D" uid="uid://btma3imyxc5fu" path="res://House/House/textures/NaturePlants_02.png" id="1_7yjdb"]
+
+[resource]
+resource_name = "NaturePlants_02"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_7yjdb")
+emission_enabled = true

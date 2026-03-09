@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ofh0b2b2bsh6"]
+
+[ext_resource type="Texture2D" uid="uid://cxx175japhrk1" path="res://House/House/textures/BrickOld.jpg" id="1_c13v4"]
+
+[resource]
+resource_name = "BrickOld"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_c13v4")
+emission_enabled = true

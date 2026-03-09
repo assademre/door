@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://1gwovqai3k2a"]
+
+[ext_resource type="Texture2D" uid="uid://bpxho57cxqpsg" path="res://House/House/textures/Ice_cream_01.png" id="1_1818h"]
+
+[resource]
+resource_name = "Ice_cream_01"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_1818h")
+emission_enabled = true

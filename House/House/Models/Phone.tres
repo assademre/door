@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://buxxa3u10oi47"]
+
+[ext_resource type="Texture2D" uid="uid://d286kx573bq7x" path="res://House/House/textures/Phone.png" id="1_f13mc"]
+
+[resource]
+resource_name = "Phone"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_f13mc")
+emission_enabled = true

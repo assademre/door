@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c3rs173kxxcp5"]
+
+[ext_resource type="Texture2D" uid="uid://i3tan20umm36" path="res://House/House/textures/Electronics.jpg" id="1_6h0r0"]
+
+[resource]
+resource_name = "Electronics"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_6h0r0")
+emission_enabled = true

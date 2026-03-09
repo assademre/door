@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://t7cdti4sdqq1"]
+
+[ext_resource type="Texture2D" uid="uid://bn4bk3acxj4cr" path="res://House/House/textures/Wood_08.jpg" id="1_adqgg"]
+
+[resource]
+resource_name = "Wood_08"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_adqgg")
+emission_enabled = true

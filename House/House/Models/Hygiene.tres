@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c7lq02n55s8i3"]
+
+[ext_resource type="Texture2D" uid="uid://fnbo2y4kpaxi" path="res://House/House/textures/Hygiene.jpg" id="1_2c0ik"]
+
+[resource]
+resource_name = "Hygiene"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_2c0ik")
+emission_enabled = true

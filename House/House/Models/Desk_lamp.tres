@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://i5nleqlnkxxl"]
+
+[ext_resource type="Texture2D" uid="uid://b5kvqqrcvr7dp" path="res://House/House/textures/Desk_lamp.png" id="1_pvh6b"]
+
+[resource]
+resource_name = "Desk_lamp"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_pvh6b")
+emission_enabled = true

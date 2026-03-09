@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bn3arw6q1hlln"]
+
+[resource]
+resource_name = "Gadgets"
+vertex_color_use_as_albedo = true
+emission_enabled = true

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://nbejetxqxfvq"]
+
+[ext_resource type="Texture2D" uid="uid://db54kgg71qxeh" path="res://House/House/textures/PlasterWhite.jpg" id="1_mreeu"]
+
+[resource]
+resource_name = "PlasterWhite"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_mreeu")
+emission_enabled = true

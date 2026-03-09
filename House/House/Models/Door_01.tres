@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://logky7gi5xqa"]
+
+[ext_resource type="Texture2D" uid="uid://cyyds607lspqh" path="res://House/House/textures/Door_01.jpg" id="1_svr60"]
+
+[resource]
+resource_name = "Door_01"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_svr60")
+emission_enabled = true

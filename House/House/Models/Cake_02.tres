@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dgy6fg1i3uecf"]
+
+[ext_resource type="Texture2D" uid="uid://b6sufseyehaoc" path="res://House/House/textures/Cake_02.png" id="1_vjln0"]
+
+[resource]
+resource_name = "Cake_02"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_vjln0")
+emission_enabled = true

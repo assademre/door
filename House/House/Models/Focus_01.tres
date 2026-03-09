@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dt5ey56s2s06q"]
+
+[ext_resource type="Texture2D" uid="uid://c556irj7ueeyy" path="res://House/House/textures/Focus_01.png" id="1_s3ov1"]
+[ext_resource type="Texture2D" uid="uid://b5cp5mkwbssrk" path="res://House/House/textures/Focus_01_Emissor.png" id="2_tqmsg"]
+
+[resource]
+resource_name = "Focus_01"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_s3ov1")
+emission_enabled = true
+emission_texture = ExtResource("2_tqmsg")

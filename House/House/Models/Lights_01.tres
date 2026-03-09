@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c8pgnwuyaaylr"]
+
+[ext_resource type="Texture2D" uid="uid://dnpuc6hrsotq7" path="res://House/House/textures/Lights_01.jpg" id="1_db588"]
+[ext_resource type="Texture2D" uid="uid://ccymkqyl4lo3a" path="res://House/House/textures/Lights_01_Emissor.png" id="2_iufvv"]
+
+[resource]
+resource_name = "Lights_01"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_db588")
+emission_enabled = true
+emission_texture = ExtResource("2_iufvv")

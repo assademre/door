@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dhb4n4hel6x4m"]
+
+[ext_resource type="Texture2D" uid="uid://dwy7bf3pjekce" path="res://House/House/textures/Broom.png" id="1_dyomx"]
+
+[resource]
+resource_name = "Broom"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_dyomx")
+emission_enabled = true

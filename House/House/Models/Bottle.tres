@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c5bj1n0uu2tlq"]
+
+[ext_resource type="Texture2D" uid="uid://b7pmxj5jqckmk" path="res://House/House/textures/Bottle.png" id="1_fe2wm"]
+
+[resource]
+resource_name = "Bottle"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_fe2wm")
+emission_enabled = true

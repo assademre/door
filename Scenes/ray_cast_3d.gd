@@ -2,8 +2,6 @@ extends RayCast3D
 
 func _physics_process(delta: float) -> void:
 	if is_colliding():
-		print(get_collider().name)
-		print(get_collider().get_parent().name)
 		var hit = get_collider()
 		if hit.name == "light_switch":
 			if Input.is_action_just_pressed("interact"):

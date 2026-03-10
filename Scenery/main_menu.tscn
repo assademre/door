@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://main_menu_v2"]
+
+[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_menu"]
+[ext_resource type="PackedScene" path="res://Scenery/flickering_room.tscn" id="2_bg"]
+[ext_resource type="AudioStream" path="res://Audio/menu_music.mp3" id="3_music"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_normal"]
+bg_color = Color(0.0, 0.0, 0.0, 0.0)
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 2
+border_color = Color(0.9, 0.85, 0.7, 0.4)
+content_margin_left = 0.0
+content_margin_right = 0.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hover"]
+bg_color = Color(0.0, 0.0, 0.0, 0.0)
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 2
+border_color = Color(0.9, 0.85, 0.7, 1.0)
+content_margin_left = 0.0
+content_margin_right = 0.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pressed"]
+bg_color = Color(0.0, 0.0, 0.0, 0.0)
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 2
+border_color = Color(0.9, 0.85, 0.7, 1.0)
+content_margin_left = 0.0
+content_margin_right = 0.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_focus"]
+
+[node name="MainMenu" type="Node3D"]
+script = ExtResource("1_menu")
+
+[node name="MenuBackground" parent="." instance=ExtResource("2_bg")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_music")
+volume_db = -6.0
+autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+offset_left = 80.0
+offset_top = 0.0
+offset_right = 480.0
+offset_bottom = 600.0
+grow_horizontal = 1
+grow_vertical = 1
+alignment = 2
+
+[node name="Title" type="Label" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+text = "PERIPHERAL"
+horizontal_alignment = 0
+theme_override_font_sizes/font_size = 86
+theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 1.0)
+
+[node name="Tagline" type="Label" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+text = "something is watching"
+horizontal_alignment = 0
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 0.35)
+
+[node name="Spacer" type="Control" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 60)
+
+[node name="StartButton" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(180, 0)
+text = "START GAME"
+alignment = 0
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 1.0)
+theme_override_colors/font_hover_color = Color(1.0, 1.0, 1.0, 1.0)
+theme_override_colors/font_pressed_color = Color(1.0, 1.0, 1.0, 1.0)
+theme_override_styles/normal = SubResource("StyleBoxFlat_normal")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pressed")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_focus")
+
+[node name="Spacer2" type="Control" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 16)
+
+[node name="QuitButton" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(180, 0)
+text = "QUIT"
+alignment = 0
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 0.5)
+theme_override_colors/font_hover_color = Color(1.0, 1.0, 1.0, 1.0)
+theme_override_colors/font_pressed_color = Color(1.0, 1.0, 1.0, 1.0)
+theme_override_styles/normal = SubResource("StyleBoxFlat_normal")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pressed")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_focus")
+
+[node name="Spacer3" type="Control" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 80)
+
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/StartButton" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/QuitButton" to="." method="_on_quit_pressed"]

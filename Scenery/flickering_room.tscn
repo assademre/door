@@ -155,4 +155,4 @@ shape = SubResource("ConcavePolygonShape3D_tgh5b")
 transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.45, -9.267032, 2.2787433, 10.298901)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1096561638]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -968.71063, -175.9418, -0.5703125)
+transform = Transform3D(1, 0, 0, 0, 0.9848078, -0.1736482, 0, 0.1736482, 0.9848078, -11.702225, 2.2849932, 13.610131)

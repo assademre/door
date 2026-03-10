@@ -57,7 +57,7 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 1.6000001, 0)
 
 [node name="Camera3D" type="Camera3D" parent="head" unique_id=316536824]
 
-[node name="RayCast3D" type="RayCast3D" parent="head" unique_id=1701885995]
+[node name="RayCast3D" type="RayCast3D" parent="head/Camera3D" unique_id=1701885995]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.21438625, 0)
 target_position = Vector3(0, -1.5, 0)
 script = ExtResource("1_v0iea")

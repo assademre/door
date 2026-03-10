@@ -14,6 +14,7 @@ roughness = 0.2
 [sub_resource type="BoxMesh" id="BoxMesh_ymns4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5okmw"]
+size = Vector3(1, 1, 0.5283203)
 
 [node name="light_switch" type="Node3D" unique_id=891473307]
 script = ExtResource("1_pgd1d")
@@ -24,11 +25,11 @@ off_mat = SubResource("StandardMaterial3D_pgd1d")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7408558, 0, 0, 0)
 mesh = SubResource("BoxMesh_ymns4")
 
-[node name="Off" type="MeshInstance3D" parent="." unique_id=112630362]
+[node name="off" type="MeshInstance3D" parent="." unique_id=112630362]
 transform = Transform3D(-0.34389415, 0, 0.003645778, -0.00060414773, 0.54325557, -0.23361558, -0.001696269, -0.19348735, -0.65592384, 0.029582918, 0.03336519, 0.20123112)
 mesh = SubResource("BoxMesh_ymns4")
 
-[node name="On" type="MeshInstance3D" parent="." unique_id=611012247]
+[node name="on" type="MeshInstance3D" parent="." unique_id=611012247]
 transform = Transform3D(-0.34389415, -6.324327e-11, 0.003645778, 0.0007946572, 0.5174876, 0.30728298, -0.0016158107, 0.25450087, -0.62481177, 0.02991563, 0.03336519, 0.20123112)
 visible = false
 mesh = SubResource("BoxMesh_ymns4")
@@ -36,4 +37,5 @@ mesh = SubResource("BoxMesh_ymns4")
 [node name="light_switch" type="StaticBody3D" parent="." unique_id=450943678]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="light_switch" unique_id=307369468]
+transform = Transform3D(1.9530983, 0, 0, 0, 1.9530983, 0, 0, 0, 1.9530983, 0, 0, 0.4606184)
 shape = SubResource("BoxShape3D_5okmw")

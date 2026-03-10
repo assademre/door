@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://clff8p5koujkb"]
-
-[ext_resource type="Texture2D" uid="uid://daf6ocltukh8n" path="res://House/House/textures/Hedges.jpg" id="1_32iha"]
-
-[resource]
-resource_name = "Hedges"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_32iha")
-emission_enabled = true

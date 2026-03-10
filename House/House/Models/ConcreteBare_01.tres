@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://cka6ngoemg63l"]
-
-[ext_resource type="Texture2D" uid="uid://evvf2tyuvri4" path="res://House/House/textures/ConcreteBare_01.png" id="1_mtdgj"]
-
-[resource]
-resource_name = "ConcreteBare_01"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_mtdgj")
-emission_enabled = true

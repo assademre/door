@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://c3c1x0qxefalu"]
-
-[ext_resource type="Texture2D" uid="uid://l6q4qfiswg11" path="res://House/House/textures/RooftilesSlate.jpg" id="1_wmgv8"]
-
-[resource]
-resource_name = "RooftilesSlate"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_wmgv8")
-emission_enabled = true

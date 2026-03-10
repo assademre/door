@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://su44yfo16e4t"]
-
-[ext_resource type="Texture2D" uid="uid://bkrhlusrn10d3" path="res://House/House/textures/Chicken.png" id="1_gl7nr"]
-
-[resource]
-resource_name = "Chicken.001"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_gl7nr")
-emission_enabled = true

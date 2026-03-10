@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://c2gdgsxctsea2"]
-
-[ext_resource type="Texture2D" uid="uid://bn7u2rhgxqa2c" path="res://House/House/textures/Can.png" id="1_i13fy"]
-
-[resource]
-resource_name = "Can"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_i13fy")
-emission_enabled = true

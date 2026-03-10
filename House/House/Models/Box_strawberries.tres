@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://di2eja8enxhf1"]
-
-[ext_resource type="Texture2D" uid="uid://cp0ko05dydv3i" path="res://House/House/textures/Box_strawberries.png" id="1_xnn0w"]
-
-[resource]
-resource_name = "Box_strawberries"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_xnn0w")
-emission_enabled = true

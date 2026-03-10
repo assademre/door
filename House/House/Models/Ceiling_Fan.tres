@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://c6d6j7f0vwnpw"]
-
-[ext_resource type="Texture2D" uid="uid://b7d050crkhxi8" path="res://House/House/textures/Ceiling_Fan.png" id="1_db5d2"]
-
-[resource]
-resource_name = "Ceiling_Fan"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_db5d2")
-emission_enabled = true

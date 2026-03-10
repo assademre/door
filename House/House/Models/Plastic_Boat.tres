@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://83ksx3tlcs70"]
-
-[ext_resource type="Texture2D" uid="uid://se0aydpyov8n" path="res://House/House/textures/Plastic_Boat.png" id="1_06iyq"]
-
-[resource]
-resource_name = "Plastic_Boat"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_06iyq")
-emission_enabled = true

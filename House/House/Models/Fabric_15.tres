@@ -1,6 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://crq3ni8pms21r"]
-
-[resource]
-resource_name = "Fabric_15"
-vertex_color_use_as_albedo = true
-emission_enabled = true

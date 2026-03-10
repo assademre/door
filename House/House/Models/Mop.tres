@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://wkex6ixuujky"]
-
-[ext_resource type="Texture2D" uid="uid://c3jj4k1bfqv20" path="res://House/House/textures/Mop.png" id="1_niphi"]
-
-[resource]
-resource_name = "Mop"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_niphi")
-emission_enabled = true

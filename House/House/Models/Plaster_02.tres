@@ -1,6 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://b68kxwund8evm"]
-
-[resource]
-resource_name = "Plaster_02"
-vertex_color_use_as_albedo = true
-emission_enabled = true

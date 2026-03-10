@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://237dt3dmqme7"]
-
-[ext_resource type="Texture2D" uid="uid://beppk0omnweuq" path="res://House/House/textures/SoilBeach.jpg" id="1_slv5l"]
-
-[resource]
-resource_name = "SoilBeach"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_slv5l")
-emission_enabled = true

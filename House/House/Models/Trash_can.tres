@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://dkg4ywcmep53q"]
-
-[ext_resource type="Texture2D" uid="uid://b46t3jxqom0h6" path="res://House/House/textures/Trash_can.png" id="1_j6o8q"]
-
-[resource]
-resource_name = "Trash_can"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_j6o8q")
-emission_enabled = true

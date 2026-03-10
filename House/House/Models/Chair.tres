@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://u5836uhlcmnk"]
-
-[ext_resource type="Texture2D" uid="uid://cyyii0g8uxm4m" path="res://House/House/textures/Chair.png" id="1_o8iji"]
-
-[resource]
-resource_name = "Chair"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_o8iji")
-emission_enabled = true

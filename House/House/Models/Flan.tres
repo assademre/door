@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://ba172fwmft3hb"]
-
-[ext_resource type="Texture2D" uid="uid://dk6gy8hvwq4wg" path="res://House/House/textures/Flan.png" id="1_0kjgj"]
-
-[resource]
-resource_name = "Flan"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_0kjgj")
-emission_enabled = true

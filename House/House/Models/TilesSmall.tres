@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://cr60v7iq6648v"]
-
-[ext_resource type="Texture2D" uid="uid://c6ewuvdt5wwdt" path="res://House/House/textures/TilesSmall.png" id="1_keg16"]
-
-[resource]
-resource_name = "TilesSmall"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_keg16")
-emission_enabled = true

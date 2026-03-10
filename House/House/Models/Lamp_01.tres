@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://c5iuerxcjoufu"]
-
-[ext_resource type="Texture2D" uid="uid://d2ldfc4ote3jm" path="res://House/House/textures/Lamp_01.png" id="1_dskji"]
-
-[resource]
-resource_name = "Lamp_01"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_dskji")
-emission_enabled = true

@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://dufogxsnkikv5"]
-
-[ext_resource type="Texture2D" uid="uid://xodekanwlgss" path="res://House/House/textures/Kitchen.jpg" id="1_7bfpv"]
-
-[resource]
-resource_name = "Kitchen"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_7bfpv")
-emission_enabled = true

@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://c6wt3yfempn3p"]
-
-[ext_resource type="Texture2D" uid="uid://4a38uvt8xmcb" path="res://House/House/textures/Cupboard_01.png" id="1_uhvc0"]
-
-[resource]
-resource_name = "Cupboard_01"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_uhvc0")
-emission_enabled = true

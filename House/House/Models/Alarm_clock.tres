@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://bxh4u42px486f"]
-
-[ext_resource type="Texture2D" uid="uid://byacgvd8vmtge" path="res://House/House/textures/Alarm_clock.png" id="1_6ygmu"]
-
-[resource]
-resource_name = "Alarm_clock"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_6ygmu")
-emission_enabled = true

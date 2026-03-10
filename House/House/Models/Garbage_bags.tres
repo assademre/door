@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://bqxyaeocyiu6l"]
-
-[ext_resource type="Texture2D" uid="uid://ubcbhsqnu5ko" path="res://House/House/textures/Garbage_bags.png" id="1_uoa1v"]
-
-[resource]
-resource_name = "Garbage_bags"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_uoa1v")
-emission_enabled = true

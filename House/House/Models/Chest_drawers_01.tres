@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://cidmbcllqi40o"]
-
-[ext_resource type="Texture2D" uid="uid://dweuq4iv7j0rw" path="res://House/House/textures/Chest_drawers_01.png" id="1_6a6ib"]
-
-[resource]
-resource_name = "Chest_drawers_01"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_6a6ib")
-emission_enabled = true

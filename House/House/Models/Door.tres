@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://b3nkildoylmed"]
-
-[ext_resource type="Texture2D" uid="uid://bgx60anak6im3" path="res://House/House/textures/Door.jpg" id="1_v0axv"]
-
-[resource]
-resource_name = "Door"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_v0axv")
-emission_enabled = true

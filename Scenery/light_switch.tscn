@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://w6g28tjvsnfv"]
+
+[ext_resource type="Script" uid="uid://c665bwxbyrrty" path="res://Scripts/light_switch.gd" id="1_pgd1d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q3x3n"]
+emission_enabled = true
+emission = Color(0.9137255, 0.9019608, 0.7921569, 1)
+emission_energy_multiplier = 3.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pgd1d"]
+albedo_color = Color(0.92535293, 0.9253528, 0.9253529, 1)
+roughness = 0.2
+
+[sub_resource type="BoxMesh" id="BoxMesh_ymns4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5okmw"]
+
+[node name="light_switch" type="Node3D" unique_id=891473307]
+script = ExtResource("1_pgd1d")
+on_mat = SubResource("StandardMaterial3D_q3x3n")
+off_mat = SubResource("StandardMaterial3D_pgd1d")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1309204319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7408558, 0, 0, 0)
+mesh = SubResource("BoxMesh_ymns4")
+
+[node name="Off" type="MeshInstance3D" parent="." unique_id=112630362]
+transform = Transform3D(-0.34389415, 0, 0.003645778, -0.00060414773, 0.54325557, -0.23361558, -0.001696269, -0.19348735, -0.65592384, 0.029582918, 0.03336519, 0.20123112)
+mesh = SubResource("BoxMesh_ymns4")
+
+[node name="On" type="MeshInstance3D" parent="." unique_id=611012247]
+transform = Transform3D(-0.34389415, -6.324327e-11, 0.003645778, 0.0007946572, 0.5174876, 0.30728298, -0.0016158107, 0.25450087, -0.62481177, 0.02991563, 0.03336519, 0.20123112)
+visible = false
+mesh = SubResource("BoxMesh_ymns4")
+
+[node name="light_switch" type="StaticBody3D" parent="." unique_id=450943678]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="light_switch" unique_id=307369468]
+shape = SubResource("BoxShape3D_5okmw")

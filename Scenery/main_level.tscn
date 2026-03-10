@@ -8,4 +8,4 @@
 [node name="HouseTest" parent="." unique_id=1879146880 instance=ExtResource("1_hksvg")]
 
 [node name="Player" parent="." unique_id=331581273 instance=ExtResource("2_5q6l4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.703917, 0.5273789, 0)
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1.703917, 0.5273789, 0)

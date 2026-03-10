@@ -2,6 +2,8 @@
 
 [ext_resource type="Material" uid="uid://jt3p6mg8k2mn" path="res://Textures/standard_material.tres" id="1_gjasa"]
 [ext_resource type="PackedScene" uid="uid://dhwdhk13p1umv" path="res://Scenery/door.tscn" id="2_lo74v"]
+[ext_resource type="PackedScene" uid="uid://c5hik3r2rhmnh" path="res://Scenery/light_bulb.tscn" id="3_nsqc6"]
+[ext_resource type="PackedScene" uid="uid://w6g28tjvsnfv" path="res://Scenery/light_switch.tscn" id="4_xp1o1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_prihy"]
 resource_name = "Material"
@@ -340,17 +342,69 @@ mesh = SubResource("ArrayMesh_i5440")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Meshes/Ceiling/StaticBody3D" unique_id=1124687179]
 shape = SubResource("ConcavePolygonShape3D_4g6uq")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1748841480]
-transform = Transform3D(-0.28217402, 0, 0.9593633, 0, 1, 0, -0.9593633, 0, -0.28217402, 2.550423, 1.2646942, 4.7201777)
-omni_range = 5.274952
+[node name="Lights" type="Node3D" parent="." unique_id=1752631535]
+transform = Transform3D(25, 0, 0, 0, 2, 0, 0, 0, 25, -0.164839, 1.3, -1.56241)
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=1508578259]
-transform = Transform3D(-0.28217402, 0, 0.9593633, 0, 1, 0, -0.9593633, 0, -0.28217402, -8.754089, 1.3713111, 8.347075)
-omni_range = 5.274952
+[node name="LightBulb" parent="Lights" unique_id=1441512383 instance=ExtResource("3_nsqc6")]
+transform = Transform3D(0.012, 0, 0, 0, 0.15, 0, 0, 0, 0.012, -0.52591616, 0.62428033, 0.56670207)
 
-[node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=2083979547]
-transform = Transform3D(-0.28217402, 0, 0.9593633, 0, 1, 0, -0.9593633, 0, -0.28217402, 76.444916, 1.2646942, -0.9901447)
-omni_range = 5.274952
+[node name="LightBulb2" parent="Lights" unique_id=786518037 instance=ExtResource("3_nsqc6")]
+transform = Transform3D(0.012, 0, 0, 0, 0.15, 0, 0, 0, 0.012, 0.11820977, 0.62428033, 0.057028867)
 
-[node name="door" parent="." unique_id=331809378 instance=ExtResource("2_lo74v")]
+[node name="LightBulb8" parent="Lights" unique_id=298964554 instance=ExtResource("3_nsqc6")]
+transform = Transform3D(0.012, 0, 0, 0, 0.15, 0, 0, 0, 0.012, 0.11820977, 0.62428033, 0.574377)
+
+[node name="LightBulb6" parent="Lights" unique_id=1972592531 instance=ExtResource("3_nsqc6")]
+transform = Transform3D(0.012, 0, 0, 0, 0.15, 0, 0, 0, 0.012, 0.11820977, 0.62428033, -0.64219683)
+
+[node name="LightBulb3" parent="Lights" unique_id=1694535459 instance=ExtResource("3_nsqc6")]
+transform = Transform3D(0.012, 0, 0, 0, 0.15, 0, 0, 0, 0.012, 0.610489, 0.62428033, 0.56670207)
+
+[node name="LightBulb4" parent="Lights" unique_id=1155735311 instance=ExtResource("3_nsqc6")]
+transform = Transform3D(0.012, 0, 0, 0, 0.15, 0, 0, 0, 0.012, 0.61505973, 0.62428033, -0.039992344)
+
+[node name="LightBulb5" parent="Lights" unique_id=577084588 instance=ExtResource("3_nsqc6")]
+transform = Transform3D(0.012, 0, 0, 0, 0.15, 0, 0, 0, 0.012, 0.58598953, 0.62428033, -0.7041487)
+
+[node name="LightBulb7" parent="Lights" unique_id=238541372 instance=ExtResource("3_nsqc6")]
+transform = Transform3D(0.012, 0, 0, 0, 0.15, 0, 0, 0, 0.012, -0.52611196, 0.62428033, -0.58407444)
+
+[node name="Doors" type="Node3D" parent="." unique_id=828104]
+
+[node name="door" parent="Doors" unique_id=331809378 instance=ExtResource("2_lo74v")]
 transform = Transform3D(-1.14960955e-07, 0, -2.63, 0, 2.63, 0, 2.63, 0, -1.14960955e-07, -0.82741356, 0.9210173, 6.370652)
+
+[node name="door2" parent="Doors" unique_id=345619752 instance=ExtResource("2_lo74v")]
+transform = Transform3D(-1.14960955e-07, 0, -2.63, 0, 2.63, 0, 2.63, 0, -1.14960955e-07, -0.82741356, 0.9210173, -13.042026)
+
+[node name="door3" parent="Doors" unique_id=1116246868 instance=ExtResource("2_lo74v")]
+transform = Transform3D(3.1362436e-08, 0, 2.63, 0, 2.63, 0, -2.63, 0, 3.1362436e-08, 6.185836, 0.9210173, -14.84828)
+
+[node name="door4" parent="Doors" unique_id=769367466 instance=ExtResource("2_lo74v")]
+transform = Transform3D(3.1362436e-08, 0, 2.63, 0, 2.63, 0, -2.63, 0, 3.1362436e-08, 6.185836, 0.9210173, -2.490769)
+
+[node name="door5" parent="Doors" unique_id=1786603247 instance=ExtResource("2_lo74v")]
+transform = Transform3D(3.1362436e-08, 0, 2.63, 0, 2.63, 0, -2.63, 0, 3.1362436e-08, 6.185836, 0.9210173, 15.32053)
+
+[node name="LightSwitches" type="Node3D" parent="." unique_id=1096650138]
+transform = Transform3D(-0.011993688, 2.0372681e-11, 0.19964007, 0.0006132492, 0.19999906, 3.684188e-05, -0.19963911, 0.00061435485, -0.011993632, -0.7208277, 1.2126698, 3.4019165)
+
+[node name="LightSwitch" parent="LightSwitches" unique_id=891473307 node_paths=PackedStringArray("LightBulb") instance=ExtResource("4_xp1o1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 3.7252903e-09, 0, 1, 0, 0, 0)
+LightBulb = NodePath("../../Lights/LightBulb")
+
+[node name="LightSwitch2" parent="LightSwitches" unique_id=1976529736 node_paths=PackedStringArray("LightBulb") instance=ExtResource("4_xp1o1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 1.8626451e-08, 0, 1, 79.53232, -0.24474669, 4.7780275)
+LightBulb = NodePath("../../Lights/LightBulb7")
+
+[node name="LightSwitch3" parent="LightSwitches" unique_id=708407341 node_paths=PackedStringArray("LightBulb") instance=ExtResource("4_xp1o1")]
+transform = Transform3D(-1, 0, -8.195639e-08, 0, 1, 0, 7.8231096e-08, 0, -1, 77.48558, -0.24474669, 38.84696)
+LightBulb = NodePath("../../Lights/LightBulb5")
+
+[node name="LightSwitch4" parent="LightSwitches" unique_id=1758669394 node_paths=PackedStringArray("LightBulb") instance=ExtResource("4_xp1o1")]
+transform = Transform3D(-1, 0, -8.195639e-08, 0, 1, 0, 7.0780516e-08, 0, -1, 15.787119, -0.05488062, 35.14033)
+LightBulb = NodePath("../../Lights/LightBulb4")
+
+[node name="LightSwitch5" parent="LightSwitches" unique_id=842137874 node_paths=PackedStringArray("LightBulb") instance=ExtResource("4_xp1o1")]
+transform = Transform3D(-1, 0, -8.195639e-08, 0, 1, 0, 5.2154064e-08, 0, -1, -73.81493, 0.22085524, 29.75735)
+LightBulb = NodePath("../../Lights/LightBulb3")

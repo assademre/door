@@ -144,7 +144,8 @@ _data = {
 &"play": SubResource("Animation_nho2g")
 }
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_nho2g"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_nho2g"]
+size = Vector3(5.082016, 2.3602295, 3.8364105)
 
 [node name="RecordPlayer" type="Node3D" unique_id=1166449917]
 script = ExtResource("1_k2241")
@@ -160,7 +161,7 @@ transform = Transform3D(0.111257374, 0, 0, 0, 1, 0, 0, 0, 0.072814815, 2.224686,
 mesh = SubResource("ArrayMesh_v0uhk")
 
 [node name="TurningPoint" type="Node3D" parent="." unique_id=108713178]
-transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, -0.8468667, 0.14477897, 0.89768136)
+transform = Transform3D(1, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, -0.8468667, 0.14477897, 0.89768136)
 
 [node name="VinylPart" type="MeshInstance3D" parent="TurningPoint" unique_id=1508820345]
 transform = Transform3D(-0.035302367, 0.0029154029, -0.018318068, 0.0021389294, 0.04780585, -0.32053056, 4.1096697e-05, 0.016236171, 0.9470605, 0.020064116, 0.3172941, -0.8848163)
@@ -173,9 +174,9 @@ stream = ExtResource("3_nho2g")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=853778384]
 libraries/ = SubResource("AnimationLibrary_nwl7h")
 
-[node name="playButton" type="Area3D" parent="." unique_id=1205014313]
-transform = Transform3D(0.81915206, 0.14941923, -0.55377233, 0, 0.9654725, 0.26050448, 0.57357645, -0.21339278, 0.79086876, -0.8468667, 0.14477897, 0.89768136)
+[node name="play_button" type="StaticBody3D" parent="." unique_id=298941834]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="playButton" unique_id=1264139079]
-transform = Transform3D(0.343, -3.2103267e-09, 2.5903995e-08, 3.1641991e-09, 0.348, 1.2750984e-08, -3.7970388e-08, -1.8963002e-08, 0.234, 0, 0, 0)
-shape = SubResource("SphereShape3D_nho2g")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="play_button" unique_id=436403611]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.043922424, -1.2439575, 0.7700424)
+shape = SubResource("BoxShape3D_nho2g")
+debug_color = Color(0.38431373, 0.49803922, 0.92941177, 1)

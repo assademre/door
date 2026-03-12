@@ -1,12 +1,13 @@
 extends Node3D
 
-var played = false
+var playing = false
 
 @onready var record_music: AudioStreamPlayer3D = $RecordMusic
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
-func toggle_play():
+func toggle_music():
 	if $AnimationPlayer.current_animation != "play":
-		played = !played
-		if !played:
-			$AnimationPlayer.play("play")
+		playing = !playing
+		if playing:
+			animation_player.play("play")
 			record_music.play()

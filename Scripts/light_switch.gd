@@ -1,10 +1,11 @@
 extends Node3D
 
 @export var on = false
-
 @export var on_mat: StandardMaterial3D
 @export var off_mat: StandardMaterial3D
 @export var LightBulb: Node3D
+
+@onready var light_audio: AudioStreamPlayer3D = $LightAudio
 
 func _ready():
 	if on:
@@ -15,6 +16,7 @@ func _ready():
 
 func toggle_light():
 	on = !on
+	light_audio.play()
 	if on:
 		$on.visible = true
 		$off.visible = false

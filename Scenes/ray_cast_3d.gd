@@ -9,3 +9,6 @@ func _physics_process(delta: float) -> void:
 		if hit.name == "door":
 			if Input.is_action_just_pressed("interact"):
 				hit.get_parent().get_parent().get_parent().toggle_door()
+		if hit.name == "playButton":
+			if Input.is_action_just_pressed("interact"):
+				hit.get_parent().toggle_play()

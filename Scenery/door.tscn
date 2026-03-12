@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dhwdhk13p1umv"]
 
 [ext_resource type="Script" uid="uid://y1s6yuonqe57" path="res://Scripts/door.gd" id="1_2joaf"]
+[ext_resource type="AudioStream" uid="uid://cl88d1ou1p6pm" path="res://sounds/door_open_se.mp3" id="2_6u4om"]
+[ext_resource type="AudioStream" uid="uid://0ukhfoj34brq" path="res://sounds/door_close_se.mp3" id="3_1s718"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_ses7c"]
 
@@ -81,3 +83,9 @@ mesh = SubResource("CylinderMesh_7fjcx")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1487879920]
 libraries/ = SubResource("AnimationLibrary_3alwu")
+
+[node name="DoorSoundOpen" type="AudioStreamPlayer3D" parent="." unique_id=1436464366]
+stream = ExtResource("2_6u4om")
+
+[node name="DoorSoundClose" type="AudioStreamPlayer3D" parent="." unique_id=233961599]
+stream = ExtResource("3_1s718")

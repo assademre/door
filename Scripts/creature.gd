@@ -47,6 +47,10 @@ func _physics_process(delta):
 		return
 
 	nav_agent.target_position = player.global_position
+	print("agent has path: ", nav_agent.is_navigation_finished())
+	print("creature global pos: ", global_position)
+	print("player global pos: ", player.global_position)
+	print("next path: ", nav_agent.get_next_path_position())
 	var next = nav_agent.get_next_path_position()
 	var direction = (next - global_position).normalized()
 	print("direction: ", direction)

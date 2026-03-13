@@ -8,20 +8,18 @@ radius = 0.77734375
 height = 2.60878
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_enevi"]
-radius = 0.8623047
-height = 3.3965225
+radius = 0.72216797
+height = 1.8327732
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1495221371]
 script = ExtResource("1_c8hdf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=5774706]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71770644, -4.231741, -0.17461705)
 shape = SubResource("CapsuleShape3D_c8hdf")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=127355286]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=624402054]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.7510033, 0)
 shape = SubResource("CapsuleShape3D_enevi")
 
 [node name="creature" parent="." unique_id=788612689 instance=ExtResource("2_c8hdf")]

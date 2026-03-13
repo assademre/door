@@ -8,6 +8,7 @@ extends Node3D
 @onready var light_audio: AudioStreamPlayer3D = $LightAudio
 
 func _ready():
+	PowerManager.power_cut.connect(_on_power_cut)
 	if on:
 		LightBulb.get_node("light").material_override = on_mat
 	if !on:
@@ -27,3 +28,10 @@ func toggle_light():
 		$off.visible = true
 		LightBulb.get_node("light").material_override = off_mat
 	LightBulb.get_node("OmniLight3D").visible = on
+	
+func _on_power_cut():
+	on = false
+	$On.visible = false
+	$Off.visible = true
+	LightBulb.get_node("light").material_override = off_mat
+	LightBulb.get_node("OmniLight3D").visible = false

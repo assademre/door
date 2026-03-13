@@ -2,10 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://87yjendpy3sf" path="res://Scenery/house_test.tscn" id="1_hksvg"]
 [ext_resource type="PackedScene" uid="uid://bxxagrfsaybbc" path="res://Scenes/player.tscn" id="2_5q6l4"]
+[ext_resource type="PackedScene" uid="uid://dqn2mmn60dyg3" path="res://Scenery/creature.tscn" id="3_5q6l4"]
 
 [node name="MainLevel" type="Node3D" unique_id=1878613847]
 
 [node name="HouseTest" parent="." unique_id=1879146880 instance=ExtResource("1_hksvg")]
 
-[node name="Player" parent="." unique_id=331581273 instance=ExtResource("2_5q6l4")]
+[node name="Player" parent="." unique_id=331581273 groups=["player"] instance=ExtResource("2_5q6l4")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1.703917, 0.5273789, 0)
+
+[node name="Creature" parent="." unique_id=1495221371 instance=ExtResource("3_5q6l4")]
+transform = Transform3D(0.17, 0, 0, 0, 0.17, 0, 0, 0, 0.17, 4.140384, 0.61065805, 0)

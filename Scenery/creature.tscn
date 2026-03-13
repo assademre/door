@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dqn2mmn60dyg3"]
+
+[ext_resource type="Script" uid="uid://b865qt53202ip" path="res://Scripts/creature.gd" id="1_c8hdf"]
+[ext_resource type="PackedScene" uid="uid://bgp3dx0sgu8ss" path="res://Models/creature.glb" id="1_p1jk2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c8hdf"]
+radius = 3.5336914
+height = 12.854126
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_enevi"]
+radius = 4.4174805
+height = 13.073853
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1495221371]
+script = ExtResource("1_c8hdf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=5774706]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71770644, -1.3544903, 0)
+shape = SubResource("CapsuleShape3D_c8hdf")
+
+[node name="creature" parent="." unique_id=788612689 instance=ExtResource("1_p1jk2")]
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=117762171]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=127355286]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=624402054]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.560852, 0)
+shape = SubResource("CapsuleShape3D_enevi")

@@ -35,9 +35,12 @@ func _physics_process(delta):
 		return
 
 	if player == null:
+		print("player is null")
 		return
 
 	var distance = global_position.distance_to(player.global_position)
+	print("distance: ", distance)
+	print("state: ", state)
 
 	if distance < CATCH_DISTANCE:
 		_catch_player()
@@ -46,15 +49,14 @@ func _physics_process(delta):
 	nav_agent.target_position = player.global_position
 	var next = nav_agent.get_next_path_position()
 	var direction = (next - global_position).normalized()
+	print("direction: ", direction)
+	print("next path pos: ", next)
 
 	velocity = direction * SPEED
 	move_and_slide()
 
-	if direction.length() > 0.1:
-		look_at(global_position + direction, Vector3.UP)
-
 func _on_power_cut():
-	await get_tree().create_timer(2.0).timeout 
+	await get_tree().create_timer(2.0).timeout
 	visible = true
 	collision_layer = body_layer
 	collision_mask = body_mask
@@ -63,6 +65,10 @@ func _on_power_cut():
 	state = State.CHASE
 	if anim_player != null:
 		anim_player.play("metarigAction")
+	# Find player directly from group
+	var players = get_tree().get_nodes_in_group("player")
+	if players.size() > 0:
+		player = players[0]
 
 func _on_body_entered(body):
 	if body.is_in_group("player"):

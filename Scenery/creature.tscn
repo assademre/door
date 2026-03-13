@@ -4,26 +4,28 @@
 [ext_resource type="PackedScene" uid="uid://darlvjdbeqibe" path="res://Scenery/creature_base.tscn" id="2_c8hdf"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c8hdf"]
-radius = 3.5336914
-height = 12.854126
+radius = 0.77734375
+height = 2.60878
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_enevi"]
-radius = 4.4174805
-height = 13.073853
+radius = 0.8623047
+height = 3.3965225
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1495221371]
 script = ExtResource("1_c8hdf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=5774706]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71770644, -1.3544903, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71770644, -4.231741, -0.17461705)
 shape = SubResource("CapsuleShape3D_c8hdf")
-
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=117762171]
 
 [node name="Area3D" type="Area3D" parent="." unique_id=127355286]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=624402054]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.560852, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.7510033, 0)
 shape = SubResource("CapsuleShape3D_enevi")
 
 [node name="creature" parent="." unique_id=788612689 instance=ExtResource("2_c8hdf")]
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=117762171]
+path_desired_distance = 0.5
+target_desired_distance = 0.5

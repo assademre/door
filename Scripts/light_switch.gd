@@ -16,20 +16,27 @@ func _ready():
 	LightBulb.get_node("OmniLight3D").visible = on
 
 func toggle_light():
-	if PowerManager.is_power_cut:
-		return
 	on = !on
 	light_audio.play()
+	
 	if on:
 		$on.visible = true
 		$off.visible = false
-		LightBulb.get_node("light").material_override = on_mat
-
-	if !on:
+	else:
 		$on.visible = false
 		$off.visible = true
+
+	if PowerManager.is_power_cut:
+		return
+
+	if on:
+		LightBulb.get_node("light").material_override = on_mat
+		LightBulb.get_node("OmniLight3D").light_energy = 1.0
+		LightBulb.get_node("OmniLight3D").visible = true
+	else:
 		LightBulb.get_node("light").material_override = off_mat
-	LightBulb.get_node("OmniLight3D").visible = on
+		LightBulb.get_node("OmniLight3D").light_energy = 0.0
+		LightBulb.get_node("OmniLight3D").visible = false
 	
 func _on_power_cut():
 	on = false
@@ -41,4 +48,6 @@ func _on_power_cut():
 		if LightBulb.has_node("light"):
 			LightBulb.get_node("light").material_override = off_mat
 		if LightBulb.has_node("OmniLight3D"):
-			LightBulb.get_node("OmniLight3D").visible = false
+			var light = LightBulb.get_node("OmniLight3D")
+			light.light_energy = 0.0
+			light.visible = false

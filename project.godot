@@ -15,6 +15,11 @@ run/main_scene="res://Scenery/main_menu.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+PowerManager="*res://Scripts/power_manager.gd"
+PowerCutEffect="*res://Scenery/power_cut_effect.tscn"
+
 [importer_defaults]
 
 scene={

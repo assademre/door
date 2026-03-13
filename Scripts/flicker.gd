@@ -9,14 +9,18 @@ var mesh: MeshInstance3D
 var base_emission_energy: float = 3.0
 var timer: float = 0.0
 var next_flicker: float = 0.0
+var is_power_cut := false
 
 func _ready():
+	PowerManager.power_cut.connect(_on_power_cut)
 	base_energy = light_energy
 	mesh = get_parent().get_node("light")
 	base_emission_energy = mesh.material_override.emission_energy_multiplier
 	_schedule_next_flicker()
 
 func _process(delta: float) -> void:
+	if is_power_cut:
+		return
 	timer += delta
 	if timer >= next_flicker:
 		timer = 0.0
@@ -39,3 +43,10 @@ func _do_flicker():
 
 func _schedule_next_flicker():
 	next_flicker = randf_range(flicker_speed_min, flicker_speed_max)
+
+func _on_power_cut():
+	is_power_cut = true
+	light_energy = 0.0
+	visible = false
+	if mesh != null and mesh.material_override != null:
+		mesh.material_override.emission_energy_multiplier = 0.0

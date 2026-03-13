@@ -12,7 +12,7 @@ func _ready():
 func _process(delta):
 	if playing and not is_power_cut_triggered:
 		var time_left = record_music.stream.get_length() - record_music.get_playback_position()
-		if time_left <= 45.0:
+		if time_left <= 140.0:
 			is_power_cut_triggered = true
 			PowerManager.cut_power()
 

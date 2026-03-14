@@ -272,8 +272,8 @@ mesh = SubResource("ArrayMesh_3e713")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Meshes/ExteriorWall2/StaticBody3D" unique_id=1586851066]
 shape = SubResource("ConcavePolygonShape3D_gjasa")
 
-[node name="ExteriorWall" type="MeshInstance3D" parent="Meshes" unique_id=1214088356]
-transform = Transform3D(25, 2.8080967e-05, -0.0038680285, -0.00034800652, 1.9999994, 0.018355917, 0.0038683, -0.0014684687, 24.999992, -0.164839, 1.3, -1.56241)
+[node name="ExteriorWall" type="MeshInstance3D" parent="Meshes" unique_id=1214088356 groups=["navigation_mesh_source_group"]]
+transform = Transform3D(25, 2.8080967e-05, -0.0038680285, -0.00034800652, 1.9999994, 0.018355917, 0.0038683, -0.0014684687, 24.999992, -0.16126177, 1.3182476, -1.5535198)
 material_override = ExtResource("1_gjasa")
 mesh = SubResource("ArrayMesh_3e713")
 

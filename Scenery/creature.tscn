@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dqn2mmn60dyg3"]
+[gd_scene format=3 uid="uid://pogcb31fn1ut"]
 
 [ext_resource type="Script" uid="uid://b865qt53202ip" path="res://Scripts/creature.gd" id="1_c8hdf"]
 [ext_resource type="PackedScene" uid="uid://darlvjdbeqibe" path="res://Scenery/creature_base.tscn" id="2_c8hdf"]

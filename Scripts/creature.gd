@@ -15,6 +15,7 @@ var area_mask := 0
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
 @onready var anim_player: AnimationPlayer = $creature.get_node_or_null("AnimationPlayer")
 @onready var detection_area: Area3D = $Area3D
+
 func _ready():
 	PowerManager.power_cut.connect(_on_power_cut)
 	detection_area.body_entered.connect(_on_body_entered)
@@ -32,11 +33,15 @@ func _ready():
 
 func _physics_process(delta):
 	if state == State.IDLE or state == State.CAUGHT:
+		if not is_on_floor():
+			velocity.y -= 9.8 * delta
+		move_and_slide()
 		return
-
+		
 	if player == null:
-		print("player is null")
 		return
+	if not is_on_floor():
+		velocity.y -= 9.8 * delta
 
 	var distance = global_position.distance_to(player.global_position)
 	print("distance: ", distance)
@@ -56,7 +61,8 @@ func _physics_process(delta):
 	print("direction: ", direction)
 	print("next path pos: ", next)
 
-	velocity = direction * SPEED
+	velocity.x = direction.x * SPEED
+	velocity.z = direction.z * SPEED
 	move_and_slide()
 
 func _on_power_cut():
@@ -66,13 +72,13 @@ func _on_power_cut():
 	collision_mask = body_mask
 	detection_area.collision_layer = area_layer
 	detection_area.collision_mask = area_mask
-	state = State.CHASE
-	if anim_player != null:
-		anim_player.play("metarigAction")
-	# Find player directly from group
 	var players = get_tree().get_nodes_in_group("player")
 	if players.size() > 0:
 		player = players[0]
+	state = State.CHASE
+	await get_tree().process_frame
+	if anim_player != null:
+		anim_player.play("metarigAction")
 
 func _on_body_entered(body):
 	if body.is_in_group("player"):

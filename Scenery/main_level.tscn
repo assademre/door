@@ -2,14 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://87yjendpy3sf" path="res://Scenery/house_test.tscn" id="1_hksvg"]
 [ext_resource type="PackedScene" uid="uid://bxxagrfsaybbc" path="res://Scenes/player.tscn" id="2_5q6l4"]
-[ext_resource type="PackedScene" uid="uid://dqn2mmn60dyg3" path="res://Scenery/creature.tscn" id="3_5q6l4"]
+[ext_resource type="PackedScene" uid="uid://pogcb31fn1ut" path="res://Scenery/creature.tscn" id="3_5q6l4"]
 
 [sub_resource type="Environment" id="Environment_5q6l4"]
 ambient_light_source = 1
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_5q6l4"]
-geometry_parsed_geometry_type = 0
-agent_height = 2.0
+geometry_parsed_geometry_type = 1
+agent_height = 1.8
+agent_max_climb = 0.3
 
 [node name="MainLevel" type="Node3D" unique_id=1878613847]
 
